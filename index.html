@@ -8,13 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="display"><span id="time">You Are Not Authorized To View This Page. Contact The TMS Media Team</span></div>
+    <div class="display"><span id="time"></span></div>
     <script>
         let userInput = prompt("Enter admin password");
         if (userInput == "TmsAdmin55") {
             location.replace("timer.html");
         } else {
             alert("Wrong password");
+            document.getElementById("time").innerHTML = "You Are Not Authorized To View This Page. Contact The TMS Media Team";
         }
     </script>
 </body>
